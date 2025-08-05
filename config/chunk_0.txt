@@ -1,0 +1,15 @@
+name = "resumecraft-ai"
+type = "javascript"
+account_id = "your-cloudflare-account-id"  # Replace with your Cloudflare account ID
+workers_dev = true
+
+[site]
+bucket = "./public"  # Adjust the path if your static files are located elsewhere
+entry-point = "functions"
+
+[env.production]
+route = "resumecraftai.com/*"  # Replace with your custom domain
+zone_id = "your-zone-id"  # Replace with your Cloudflare zone ID
+
+[build]
+command = "npm run build"

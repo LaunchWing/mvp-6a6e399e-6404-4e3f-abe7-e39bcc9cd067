@@ -1,0 +1,9 @@
+/resumecraft-ai
+  /public
+    index.html
+    ... (other static assets)
+  /functions
+    index.ts  // Your Cloudflare Functions entry point
+  package.json
+  wrangler.toml
+  tsconfig.json  // TypeScript configuration if using TypeScript

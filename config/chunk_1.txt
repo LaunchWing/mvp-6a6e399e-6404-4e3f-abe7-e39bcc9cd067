@@ -1,0 +1,22 @@
+{
+  "name": "resumecraft-ai",
+  "version": "1.0.0",
+  "description": "AI-powered platform that creates customized, industry-specific resume templates.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:client && npm run build:functions",
+    "build:client": "vite build",  // Assuming you're using Vite for the frontend
+    "build:functions": "tsc",  // Assuming you're using TypeScript for Cloudflare Functions
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^3.0.0",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "vite": "^3.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
